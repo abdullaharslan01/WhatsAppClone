@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F51C3A1B2CBE7EB500113ED0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F51C3A1A2CBE7EB500113ED0 /* FirebaseAuth */; };
+		F51C3A1D2CBE7EB500113ED0 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = F51C3A1C2CBE7EB500113ED0 /* FirebaseCore */; };
+		F51C3A1F2CBE7EB500113ED0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F51C3A1E2CBE7EB500113ED0 /* FirebaseFirestore */; };
+		F51C3A212CBE7EB500113ED0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F51C3A202CBE7EB500113ED0 /* FirebaseStorage */; };
+		F5AC3E7F2CCE7872005B9086 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F5AC3E7E2CCE7872005B9086 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F51C3A052CBE7E0800113ED0 /* whatsAppClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatsAppClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -16,6 +24,31 @@
 			path = whatsAppClone;
 			sourceTree = "<group>";
 		};
+		F56AE9ED2CC0D3C00077BB40 /* App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
+			sourceTree = "<group>";
+		};
+		F56AE9EE2CC0D3C40077BB40 /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F56AE9EF2CC0D3C90077BB40 /* Service */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F56AE9F02CC0D3CD0077BB40 /* Utils */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F56AE9F32CC0D42F0077BB40 /* Core */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Core;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +56,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51C3A1D2CBE7EB500113ED0 /* FirebaseCore in Frameworks */,
+				F51C3A212CBE7EB500113ED0 /* FirebaseStorage in Frameworks */,
+				F51C3A1B2CBE7EB500113ED0 /* FirebaseAuth in Frameworks */,
+				F51C3A1F2CBE7EB500113ED0 /* FirebaseFirestore in Frameworks */,
+				F5AC3E7F2CCE7872005B9086 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,8 +70,14 @@
 		F51C39FC2CBE7E0800113ED0 = {
 			isa = PBXGroup;
 			children = (
-				F51C3A072CBE7E0800113ED0 /* whatsAppClone */,
+				F56AE9ED2CC0D3C00077BB40 /* App */,
+				F56AE9F32CC0D42F0077BB40 /* Core */,
+				F56AE9EE2CC0D3C40077BB40 /* Model */,
+				F56AE9EF2CC0D3C90077BB40 /* Service */,
+				F56AE9F02CC0D3CD0077BB40 /* Utils */,
+				F51C3A192CBE7EB500113ED0 /* Frameworks */,
 				F51C3A062CBE7E0800113ED0 /* Products */,
+				F51C3A072CBE7E0800113ED0 /* whatsAppClone */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,6 +87,13 @@
 				F51C3A052CBE7E0800113ED0 /* whatsAppClone.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F51C3A192CBE7EB500113ED0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,9 +113,19 @@
 			);
 			fileSystemSynchronizedGroups = (
 				F51C3A072CBE7E0800113ED0 /* whatsAppClone */,
+				F56AE9ED2CC0D3C00077BB40 /* App */,
+				F56AE9EE2CC0D3C40077BB40 /* Model */,
+				F56AE9EF2CC0D3C90077BB40 /* Service */,
+				F56AE9F02CC0D3CD0077BB40 /* Utils */,
+				F56AE9F32CC0D42F0077BB40 /* Core */,
 			);
 			name = whatsAppClone;
 			packageProductDependencies = (
+				F51C3A1A2CBE7EB500113ED0 /* FirebaseAuth */,
+				F51C3A1C2CBE7EB500113ED0 /* FirebaseCore */,
+				F51C3A1E2CBE7EB500113ED0 /* FirebaseFirestore */,
+				F51C3A202CBE7EB500113ED0 /* FirebaseStorage */,
+				F5AC3E7E2CCE7872005B9086 /* Kingfisher */,
 			);
 			productName = whatsAppClone;
 			productReference = F51C3A052CBE7E0800113ED0 /* whatsAppClone.app */;
@@ -94,6 +155,10 @@
 			);
 			mainGroup = F51C39FC2CBE7E0800113ED0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F51C3A162CBE7E3F00113ED0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F5AC3E7D2CCE7872005B9086 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F51C3A062CBE7E0800113ED0 /* Products */;
 			projectDirPath = "";
@@ -324,6 +389,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F51C3A162CBE7E3F00113ED0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.3.0;
+			};
+		};
+		F5AC3E7D2CCE7872005B9086 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F51C3A1A2CBE7EB500113ED0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F51C3A162CBE7E3F00113ED0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F51C3A1C2CBE7EB500113ED0 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F51C3A162CBE7E3F00113ED0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		F51C3A1E2CBE7EB500113ED0 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F51C3A162CBE7E3F00113ED0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F51C3A202CBE7EB500113ED0 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F51C3A162CBE7E3F00113ED0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		F5AC3E7E2CCE7872005B9086 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5AC3E7D2CCE7872005B9086 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F51C39FD2CBE7E0800113ED0 /* Project object */;
 }
